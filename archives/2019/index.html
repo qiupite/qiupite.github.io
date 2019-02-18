@@ -326,7 +326,7 @@
 
     
 
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat  //404"></i> <br>公益 404</a>
+    <a href="/404.html" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat  //404"></i> <br>公益 404</a>
 
   </li>
 
@@ -458,7 +458,7 @@
 
       <h3 class="post-title">
         
-          <a class="post-title-link" href="/2019/02/13/git-status-中文乱码解决/" itemprop="url">
+          <a class="post-title-link" href="/git-status-中文乱码解决.html" itemprop="url">
             
               <span itemprop="name">git status 中文乱码解决</span>
             
@@ -493,7 +493,7 @@
 
       <h3 class="post-title">
         
-          <a class="post-title-link" href="/2019/02/13/多电脑共享git的ssh的key/" itemprop="url">
+          <a class="post-title-link" href="/多电脑共享git的ssh的key.html" itemprop="url">
             
               <span itemprop="name">多电脑共享git的ssh的key</span>
             
@@ -528,7 +528,7 @@
 
       <h3 class="post-title">
         
-          <a class="post-title-link" href="/2019/02/12/hello-world/" itemprop="url">
+          <a class="post-title-link" href="/hello-world.html" itemprop="url">
             
               <span itemprop="name">Hello World</span>
             
@@ -1243,82 +1243,29 @@
 
 
   
+
+  
+
+  
+
+  
+
   
   <script>
-    
-    function showTime(Counter) {
-      var entries = [];
-      var $visitors = $('.leancloud_visitors');
-
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
-        .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function ({ responseJSON }) {
-          console.log(`LeanCloud Counter Error: ${responseJSON.code} ${responseJSON.error}`);
-        });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'ohiC1giKUan6ypfESSOSwPKw-gzGzoHsz')
-        .done(function({ api_server }) {
-          var Counter = function(method, url, data) {
-            return $.ajax({
-              method: method,
-              url: 'https://' + api_server + '/1.1' + url,
-              headers: {
-                'X-LC-Id': 'ohiC1giKUan6ypfESSOSwPKw-gzGzoHsz',
-                'X-LC-Key': '3DWDc0qvNNmBtG2fGTOuyaLV',
-                'Content-Type': 'application/json',
-              },
-              data: data
-            });
-          };
-          
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
-          
-        });
-    });
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'; 
+      }
+      else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
   </script>
 
-
-
-  
-
-  
-
-  
-
-  
 
   
 

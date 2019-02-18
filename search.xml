@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[git status 中文乱码解决]]></title>
-    <url>%2F2019%2F02%2F13%2Fgit-status-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%2F</url>
+    <url>%2Fgit-status-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3.html</url>
     <content type="text"><![CDATA[现象当我们使用git提交带有中文字符的文件名时，使用 git status 发现中文乱码 解决方案（以mac电脑为例）设置git的全局配置项1git config --global core.quotepath false]]></content>
       <categories>
         <category>工具</category>
@@ -13,7 +13,7 @@
   </entry>
   <entry>
     <title><![CDATA[多电脑共享git的ssh的key]]></title>
-    <url>%2F2019%2F02%2F13%2F%E5%A4%9A%E7%94%B5%E8%84%91%E5%85%B1%E4%BA%ABgit%E7%9A%84ssh%E7%9A%84key%2F</url>
+    <url>%2F%E5%A4%9A%E7%94%B5%E8%84%91%E5%85%B1%E4%BA%ABgit%E7%9A%84ssh%E7%9A%84key.html</url>
     <content type="text"><![CDATA[写在前面的需求有时候我们有这样的需求：我们有多个电脑终端同时在使用Git，比如家里和公司，如果不想重新生成key导致管理麻烦的话，我们可以直接共享已有的key 解决方案（以mac电脑为例） 复制电脑A上已有的id_rsa和id_rsa.pub到电脑B上 添加权限，否则获取代码会失败12chmod 600 id_rsachmod 644 id_rsa.pub]]></content>
       <categories>
         <category>工具</category>
@@ -24,7 +24,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F02%2F12%2Fhello-world%2F</url>
+    <url>%2Fhello-world.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
